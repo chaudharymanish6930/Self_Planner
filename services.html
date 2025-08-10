@@ -123,6 +123,31 @@
     .contact-form button:hover {
       background-color: #e76f51;
     }
+    /* Notification styles */
+#notification-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+.notification {
+  background: #333;
+  color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.4s ease;
+}
+.notification.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.notification.success { background: #28a745; }
+.notification.error { background: #dc3545; }
+
   </style>
 </head>
 <body>
