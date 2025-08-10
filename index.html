@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Self Planner Event M.services {
+    padding: 60px 20px;
+    background-color: #1e1232;
+    text-align: center;
+    animation: fadeIn 2s;
+  }
+anagement</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+        url('https://shaandaarevents.com/wp-content/uploads/2024/08/GTA00634-2048x1366.jpg') no-repeat center center/cover;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: fadeInDown 1s ease-out;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #f39c12;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .hero h2 {
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+      color: #f39c12;
+      animation: slideUp 1s ease-in;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      animation: fadeIn 2s ease;
+    }
+
+    .services {
+      padding: 60px 20px;
+      background-color: #1e1232;
+      text-align: center;
+      animation: fadeIn 2s;
+    }
+
+    .services h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #f39c12;
+    }
+
+    .service-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #291528;
+      border-radius: 15px;
+      padding: 20px;
+      width: 280px;
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 20px #f39c1280;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h4 {
+      margin-top: 15px;
+      color: #f39c12;
+    }
+
+    .login {
+      padding: 60px 20px;
+      background-color: #2e1f44;
+      text-align: center;
+    }
+
+    .login h3 {
+      color: #f39c12;
+      margin-bottom: 20px;
+    }
+
+    .login form {
+      display: inline-block;
+      text-align: left;
+      background: #291528;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .login input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .login button {
+      padding: 10px 20px;
+      background: #f39c12;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #1a0e2a;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Self Planner</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Plan Events with Ease and Elegance</h2>
+    <p>Your one-stop solution for personalized event planning—from weddings to corporate functions.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h3>Our Services</h3>
+    <div class="service-cards">
+      <div class="card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.0jqwncWqFXB7OoJdZD8GtQHaE8?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Weddings">
+        <h4>Wedding Planning</h4>
+      </div>
+      <div class="card">
+        <img src="https://www.pingpongmoments.in/blog/wp-content/uploads/2022/09/corporate-events-3.jpg" alt="Corporate Events">
+        <h4>Corporate Events</h4>
+      </div>
+      <div class="card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.LBXeSNEYbmPpgRDvPpsZ_gHaFj?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Birthdays">
+        <h4>Birthday Parties</h4>
+      </div>
+      <div class="card">
+        <img src="https://www.weddingbellcaterer.com/wp-content/uploads/2023/01/top-caterers-bramhapur-garia-bansdroni-naktala.jpg" alt="Decor & Catering">
+        <h4>Decor & Catering</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="login" class="login">
+    <h3>Client Login</h3>
+    <form>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Self Planner Event Management. All rights reserved.</p>
+  </footer>
+</body>
+</html>

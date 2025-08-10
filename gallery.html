@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery - Self Planner</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  
+    .gallery-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #124706;
+      border-radius: 15px;
+      padding: 20px;
+      width: 280px;
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1.5s ease;
+    }
+    .card:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 20px #f39c1280;
+    }
+    .gallery {
+      padding: 40px 0px;
+      background-color: #4e095b;
+      text-align: center;
+      animation: fadeIn 4s;
+    }
+
+  </style>
+</head>
+<body>
+   <header>
+    <h1>Self Planner</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Our Beautiful Moments</h2>
+    <section id="services" class="gallery">
+    <div class="gallery-card">
+    <ul>
+      <div class="card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.v5nkXHeFHbFR8aGGthXbcwHaE8?pid=Api&P=0&h=180" alt="wedding">
+      <li><a href="https://d1dj5epwtonsf2.cloudfront.net/assets/gallery/742/STEL4866_HDR.jpg">Photo Gallery</a></li>
+      </div>
+      <div class="card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.kCQQzZb-gXcmm72mMW7BKgHaEo?pid=Api&P=0&h=180" alt="wedding">
+      <li><a href="self_planner.mp4">Video Gallery</a></li>
+      </div>
+      <div class="card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.T3V3VZG7v6VvyZw_h16aJAHaE8?pid=Api&P=0&h=180" alt="wedding">
+      <li><a href="https://youtube.com/shorts/lj-0ayxa3mc?si=cdbkwQZYdDFWUkr4">Shorts</a></li>
+      </div>
+      <div class="card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.T3V3VZG7v6VvyZw_h16aJAHaE8?pid=Api&P=0&h=180" alt="wedding">
+      <li><a href="self_planner.mp4">Wedding Albums</a></li>
+      </div>
+    </ul>
+    </div>
+    </section>
+  </main>
+  <footer>
+    <p style="text-align: center;">&copy; 2025 Self Planner Event Management. All rights reserved.</p>
+  </footer>
+</body>
+</html>
